@@ -1,27 +1,82 @@
-import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import React from 'react'
+import Logo from './components/Logo'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit
-          <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="text-6xl text-red-500"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="container pl-32 pt-28 max-w-4xl space-y-16">
+            <div className="text-white">
+                <Logo />
+            </div>
+
+            <div className="space-y-8">
+                <p className="text-2xl">
+                    <span className="font-bold">Ceghap</span> is a full-stack
+                    developer based in Penang, Malaysia. He love building app
+                    and exploring newer technology in his spare time.
+                </p>
+                <p className="text-2xl">
+                    He is currently in love with{' '}
+                    <span className="font-bold border-b-2 border-black">
+                        Node.js
+                    </span>{' '}
+                    and{' '}
+                    <span className="font-bold border-b-2 border-black">
+                        React.js
+                    </span>{' '}
+                    .
+                </p>
+                <p className="text-2xl">
+                    This website is proof of his existence. Kind of.
+                </p>
+            </div>
+
+            <div className="flex space-x-8">
+                <a href="https://www.facebook.com/ceghap">
+                    <img
+                        className="w-10"
+                        alt="Facebook"
+                        src="/images/logo-facebook.svg"
+                    />
+                </a>
+                <a href="https://twitter.com/ceghap">
+                    <img
+                        className="w-10"
+                        alt="Twitter"
+                        src="/images/logo-twitter.svg"
+                    />
+                </a>
+                <a href="https://github.com/ceghap">
+                    <img
+                        className="w-10"
+                        alt="Github"
+                        src="/images/logo-github.svg"
+                    />
+                </a>
+                <a href="https://dribbble.com/ceghap">
+                    <img
+                        className="w-10"
+                        alt="dribbble"
+                        src="/images/logo-dribbble.svg"
+                    />
+                </a>
+                <a href="https://www.instagram.com/ceghap/">
+                    <img
+                        className="w-10"
+                        alt="Instagram"
+                        src="/images/logo-instagram.svg"
+                    />
+                </a>
+                <a href="https://www.twitch.tv/ceghap">
+                    <img
+                        className="w-10"
+                        alt="Twitch"
+                        src="/images/logo-twitch.svg"
+                    />
+                </a>
+            </div>
+            <p className="text-xs text-gray-400">© 2022 Ceghap</p>
+        </div>
+    )
 }
 
-export default App;
+export default App
