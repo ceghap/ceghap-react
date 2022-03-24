@@ -31,13 +31,6 @@ function App() {
             </div>
 
             <div className="flex space-x-8">
-                <a href="https://www.facebook.com/ceghap">
-                    <img
-                        className="w-10"
-                        alt="Facebook"
-                        src="/images/logo-facebook.svg"
-                    />
-                </a>
                 <a href="https://twitter.com/ceghap">
                     <img
                         className="w-10"
@@ -57,20 +50,6 @@ function App() {
                         className="w-10"
                         alt="dribbble"
                         src="/images/logo-dribbble.svg"
-                    />
-                </a>
-                <a href="https://www.instagram.com/ceghap/">
-                    <img
-                        className="w-10"
-                        alt="Instagram"
-                        src="/images/logo-instagram.svg"
-                    />
-                </a>
-                <a href="https://www.twitch.tv/ceghap">
-                    <img
-                        className="w-10"
-                        alt="Twitch"
-                        src="/images/logo-twitch.svg"
                     />
                 </a>
             </div>
