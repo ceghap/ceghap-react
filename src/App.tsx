@@ -3,7 +3,8 @@ import Logo from './components/Logo'
 
 function App() {
     return (
-        <div className="container pl-32 pt-28 max-w-4xl space-y-16">
+        // eslint-disable-next-line max-len
+        <div className="container p-4 space-y-8 md:px-32 md:pt-28 md:max-w-4xl md:space-y-16">
             <div className="text-white">
                 <Logo />
             </div>
@@ -53,7 +54,9 @@ function App() {
                     />
                 </a>
             </div>
-            <p className="text-xs text-gray-400">© 2022 Ceghap</p>
+            <p className="text-xs text-gray-400 fixed bottom-4 ">
+                © {new Date().getFullYear()} Ceghap
+            </p>
         </div>
     )
 }
